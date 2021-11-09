@@ -109,6 +109,22 @@ DataStream<Person> streaming = inputData.map(data -> {
 //数据下沉
 streaming.addSink(new MySqlSink());
 ```
+## 开启nc
+```shell
+nc -l
+```
+
+## 添加任务
+```shell
+./flink run -c org.example.MysqlSinkDemo /Users/twang/IdeaProjects/flink-demo/target/flink-demo-1.0-SNAPSHOT-jar-with-dependencies.jar
+```
+
+## 输入数据
+```shell
+$ nc -l
+wangtao,29,shanghai
+
+```
 
 ### 查看mysql数据
 
