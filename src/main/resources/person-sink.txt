@@ -1,0 +1,3 @@
+Person{name='eden', age=29, address='shanghai'}
+Person{name='twang', age=29, address='kunshan'}
+Person{name='qq', age=27, address='anqing'}
